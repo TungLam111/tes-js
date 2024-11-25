@@ -1,5 +1,3 @@
-document.addEventListener('DOMContentLoaded', function () {
-
 var currentScript = document.currentScript;
 
 let scriptURL = currentScript.src;
@@ -355,4 +353,3 @@ setTimeout(function () {
     });
 
 },300);
-});
