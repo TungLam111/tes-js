@@ -150,8 +150,14 @@
         $(".content .wrap .main").attr('style', 'background: #f5f5f5 !important;');
         $(".content .wrap .sidebar").attr('style', 'background: #f5f5f5 !important;');
 
-        $(".step-footer-continue-btn").attr('style', 'background: black; border-radius: 16px !important;');
-
+        $(".step-footer-continue-btn").attr('style',
+            `background: black;
+             padding-top: 10px !important;
+             padding-bottom: 10px !important;
+             border-radius: 4px !important; 
+             font-weight: 500;`
+        );
+        
         if ($(window).width() >= 1000) {
             $('.sidebar').css({
                 'padding-left': 'calc(1%+5px)',
