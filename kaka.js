@@ -156,7 +156,7 @@
             $('.sidebar').css({
                 'padding-left': 'calc(1%+5px)',
                 'width': '60%',
-                'margin-top': '106px'
+                'margin-top': '18px'
             });
 
             $('.main').css({
