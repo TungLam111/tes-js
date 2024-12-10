@@ -234,6 +234,11 @@
     }
 
     function restyle() {
+        
+        if (window.location.href.includes("thank_you")) {
+            $(".sidebar:not(.sidebar-second) .sidebar-content").addClass("noafter");
+        }
+        
         if ($(window).width() >= 1000) {
             $(".sidebar").attr('style', `  
                 padding-left: 1% !important;
