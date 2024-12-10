@@ -225,8 +225,14 @@
         $(".product-price .order-summary-emphasis").css("letter-spacing", "2px");
         $(".payment-due-price").css("letter-spacing", "2px");
         
+        console.log("koko", window.location.href);
         if (window.location.href.includes("thank_you")) {
-            $(".sidebar-content::after").css("content", "none");
+            console.log("yessssss");
+            $(".sidebar-content::after").attr('style', function (i, style) {
+                return (style || '') + `
+                content: none !important;
+                `;
+            });
         }
     }
 
