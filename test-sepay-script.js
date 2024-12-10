@@ -226,7 +226,7 @@
         $(".payment-due-price").css("letter-spacing", "2px");
         
         if (window.location.href.includes("thank_you")) {
-            $(".sidebar-content::after").css("display", "none");
+            $(".sidebar-content::after").css("content", "none");
         }
     }
 
