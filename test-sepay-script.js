@@ -224,6 +224,10 @@
         $(".total-line-subtotal .order-summary-emphasis").css("letter-spacing", "2px");
         $(".product-price .order-summary-emphasis").css("letter-spacing", "2px");
         $(".payment-due-price").css("letter-spacing", "2px");
+        
+        if (window.location.href.includes("thank_you")) {
+            $(".sidebar-content::after").css("display", "none");
+        }
     }
 
     function restyle() {
