@@ -231,69 +231,55 @@
 
     function restyle() {
         if ($(window).width() >= 1000) {
-            $(".sidebar").attr('style', function (i, style) {
-                return (style || '') + `
+            $(".sidebar").attr('style', `  
                 padding-left: 1% !important;
                 width: 60% !important;
                 margin-top: 50px !important;
-                `;
-            });
-            $(".main").attr('style', function (i, style) {
-                return (style || '') + `
+            `);
+            $(".main").attr('style', `
                 padding-right: 1% !important;
                 width: 60% !important;
                 padding-top: 56px !important;
-                `;
-            });
+            `);
 
-            $(".sidebar .sidebar-content .order-summary").attr('style', function (i, style) {
-                return (style || '') + `
+            $(".sidebar .sidebar-content .order-summary").attr('style', `
                 border-radius: 10px !important;
                 padding: 20px !important;
                 background-color: white !important;
                 margin-bottom: 10px !important;
                 margin-top: 25px !important;
                 box-shadow: 0px -1px 2px 0px rgba(0, 0, 0, 0.04), 0px 2px 4px 0px rgba(0, 0, 0, 0.08) !important;
-                `;
-            });
+            `);
         } else {
-            $(".sidebar").attr('style', function (i, style) {
-                return (style || '') + `
+            $(".sidebar").attr('style', `
                 width: 100% !important; 
-                margin-top: 15px !important`;
-            });
-            $(".main").attr('style', function (i, style) {
-                return (style || '') + `
+                margin-top: 15px !important`
+            );
+            $(".main").attr('style', `
                 width: 100% !important; 
                 margin-top: 0 !important; 
                 padding-top: 0 !important;
-                `;
-            });
+                `
+            );
 
-            $(".order-summary").attr('style', function (i, style) {
-                return (style || '') + `
-                    border-radius: 10px !important;
+            $(".order-summary").attr('style', `
+                              border-radius: 10px !important;
                     padding: 0 20px !important;
                     background-color: white;
                     margin-top: 0 !important;
                     margin-bottom: 0 !important;
                     box-shadow: 0px -1px 2px 0px rgba(0, 0, 0, 0.04), 0px 2px 4px 0px rgba(0, 0, 0, 0.08) !important;
-                `;
-            });
+            `);
 
             $(".order-summary-toggle").on("click", function () {
                 if ($(this).hasClass("order-summary-toggle-show")) {
-                    $(".order-summary").attr('style', function (i, style) {
-                        return (style || '') + `
+                    $(".order-summary").attr('style', `
                         margin-bottom: 0 !important;
-                        margin-top: 0 !important;`;
-                    });
+                        margin-top: 0 !important;`);
                 } else {
-                    $(".order-summary").attr('style', function (i, style) {
-                        return (style || '') + `
+                    $(".order-summary").attr('style', `
                         margin-bottom: 15px !important;
-                        margin-top: 0 !important;`;
-                    });
+                        margin-top: 0 !important;`);
 
                 }
             })
