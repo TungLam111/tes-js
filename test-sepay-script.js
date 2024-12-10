@@ -197,7 +197,7 @@
         // ALL - CSS for action continue button
         $(".step-footer-continue-btn").attr('style',
             `background: black;
-             padding: 1.4em 1.7em !important;
+             padding: 10px 20px !important;
              border-radius: 4px !important; 
              font-weight: 500;`
         );
