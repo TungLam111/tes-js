@@ -263,7 +263,7 @@
             );
 
             $(".order-summary").attr('style', `
-                              border-radius: 10px !important;
+                    border-radius: 10px !important;
                     padding: 0 20px !important;
                     background-color: white;
                     margin-top: 0 !important;
@@ -271,6 +271,18 @@
                     box-shadow: 0px -1px 2px 0px rgba(0, 0, 0, 0.04), 0px 2px 4px 0px rgba(0, 0, 0, 0.08) !important;
             `);
 
+            // Initialize if order summary is expanded
+            if ($(".order-summary").hasClass("order-summary-is-expanded")) {
+                $(".order-summary").attr('style', `
+                        margin-bottom: 15px !important;
+                        border-radius: 10px !important;
+                        padding: 0 20px !important;
+                        background-color: white;
+                        box-shadow: 0px -1px 2px 0px rgba(0, 0, 0, 0.04), 0px 2px 4px 0px rgba(0, 0, 0, 0.08) !important;
+                `);
+            }
+
+            // Listen on click trigger to modify styling
             $(".order-summary-toggle").on("click", function () {
                 if ($(this).hasClass("order-summary-toggle-show")) {
                     $(".order-summary").attr('style', `
@@ -279,8 +291,12 @@
                 } else {
                     $(".order-summary").attr('style', `
                         margin-bottom: 15px !important;
-                        margin-top: 0 !important;`);
-
+                        margin-top: 0 !important;
+                        padding: 0 20px !important;
+                        border-radius: 10px !important;
+                        background-color: white !important;
+                        box-shadow: 0px -1px 2px 0px rgba(0, 0, 0, 0.04), 0px 2px 4px 0px rgba(0, 0, 0, 0.08) !important;
+                        `);
                 }
             })
         }
