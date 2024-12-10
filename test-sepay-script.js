@@ -219,10 +219,10 @@
         $(".content.content-second").css("display", "none");
 
         // ALL - price
-        $(".total-recap-final-price").css("letter-spacing", "2px");
-        $(".total-line-subtotal .order-summary-emphasis").css("letter-spacing", "2px");
-        $(".product-price .order-summary-emphasis").css("letter-spacing", "2px");
-        $(".payment-due-price").css("letter-spacing", "2px");
+        $(".total-recap-final-price").css("letter-spacing", "0");
+        // $(".total-line-subtotal .order-summary-emphasis").css("letter-spacing", "2px");
+        // $(".product-price .order-summary-emphasis").css("letter-spacing", "2px");
+        $(".payment-due-price").css("letter-spacing", "0");
         
         if (window.location.href.includes("thank_you")) {
             $(".sidebar-content").addClass("noafter");
