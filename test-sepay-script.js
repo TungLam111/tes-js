@@ -264,7 +264,7 @@
 
             $(".order-summary").attr('style', `
                     border-radius: 10px !important;
-                    padding: 0 20px !important;
+                    padding: 20px !important;
                     background-color: white;
                     margin-top: 0 !important;
                     margin-bottom: 0 !important;
@@ -276,7 +276,7 @@
                 $(".order-summary").attr('style', `
                         margin-bottom: 15px !important;
                         border-radius: 10px !important;
-                        padding: 0 20px !important;
+                        padding: 20px !important;
                         background-color: white;
                         box-shadow: 0px -1px 2px 0px rgba(0, 0, 0, 0.04), 0px 2px 4px 0px rgba(0, 0, 0, 0.08) !important;
                 `);
@@ -292,7 +292,7 @@
                     $(".order-summary").attr('style', `
                         margin-bottom: 15px !important;
                         margin-top: 0 !important;
-                        padding: 0 20px !important;
+                        padding: 20px !important;
                         border-radius: 10px !important;
                         background-color: white !important;
                         box-shadow: 0px -1px 2px 0px rgba(0, 0, 0, 0.04), 0px 2px 4px 0px rgba(0, 0, 0, 0.08) !important;
