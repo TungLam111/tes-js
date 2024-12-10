@@ -283,6 +283,7 @@
             // Initialize if order summary is expanded
             if ($(".order-summary").hasClass("order-summary-is-expanded")) {
                 $(".order-summary").attr('style', `
+                        margin-top: 0px !important;
                         margin-bottom: 15px !important;
                         border-radius: 10px !important;
                         padding: 20px !important;
