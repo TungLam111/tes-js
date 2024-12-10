@@ -243,6 +243,7 @@
                 return (style || '') + `
                 padding-right: 1% !important;
                 width: 60% !important;
+                padding-top: 56px !important;
                 `;
             });
 
