@@ -225,7 +225,11 @@
         $(".payment-due-price").css("letter-spacing", "0");
         
         if (window.location.href.includes("thank_you")) {
-            $(".sidebar-content").addClass("noafter");
+            if ($(window).width() >= 1000) {
+                $(".sidebar:not(.sidebar-second) .sidebar-content").addClass("noafter");
+            } else {
+                $(".step .step-footer").addClass("nobefore");
+            }
         }
     }
 
