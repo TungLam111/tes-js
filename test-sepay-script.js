@@ -199,7 +199,9 @@
             `background: black;
              padding: 10px 20px !important;
              border-radius: 4px !important; 
-             font-weight: 500;`
+             font-weight: 500 !important;              
+             color: white !important;
+             `
         );
 
         $(".order-summary-toggle-icon-wrapper svg").css("fill", "black");
